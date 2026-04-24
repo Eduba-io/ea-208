@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mango · Una lectura honesta del stack</title>
+<meta name="description" content="Saw the Ironspring writeup on the risk engine. A short read on where the stack will bend first before BBVA asks for an explainability story." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div data-eduba="banner" style="background:#0a0a0a;color:#f5f5f5;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;letter-spacing:0.01em;border-bottom:1px solid #1f1f1f;position:relative;z-index:1000;">
+  <a href="https://eduba.io" target="_blank" rel="noopener" style="color:#f5f5f5;text-decoration:none;font-weight:800;font-size:17px;letter-spacing:-0.02em;line-height:1;">eduba</a>
+  <span style="opacity:0.88;">Prepared by Eduba for Mango &mdash; Emerge Americas 2026</span>
+</div>
+
+
+<header class="nav" role="banner">
+  <div class="nav__inner">
+    <a href="https://mangxo.com" class="nav__brand" target="_blank" rel="noopener" aria-label="Mango">
+      <img src="logo.png" alt="Mango" class="nav__logo" />
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <span class="nav__tag">Prepared for Mango</span>
+    </nav>
+    <a href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener" class="btn btn--pill-yellow">Agendar 30 min</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__grid">
+      <div class="hero__content">
+        <div class="eyebrow">
+          <span class="eyebrow__dot"></span>
+          <span>Para el equipo de Mango</span>
+        </div>
+        <h1 class="hero__headline">
+          Una lectura honesta del stack de Mango.
+          <span class="hero__headline-alt">Where the risk engine earns the right to scale.</span>
+        </h1>
+        <p class="hero__sub">
+          Ironspring led the $3M seed in July. BBVA Spark extended the facility the same week. This page is a short read on where that stack will bend first.
+        </p>
+        <div class="hero__ctas">
+          <a href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener" class="btn btn--pill-yellow btn--lg">Hablar con Matt · 30 min</a>
+          <a href="#pitch" class="btn btn--ghost">Leer la lectura</a>
+        </div>
+        <ul class="hero__stats">
+          <li><strong>1,500+</strong><span>people trained since May 2025</span></li>
+          <li><strong>6,000–9,000</strong><span>hours saved per year</span></li>
+          <li><strong>95%</strong><span>30-day adoption rate</span></li>
+        </ul>
+      </div>
+
+      <aside class="hero__card" aria-label="Hypothesis card">
+        <div class="tile tile--orange">
+          <div class="tile__label">Hipótesis</div>
+          <p class="tile__body">BBVA is going to ask Mango for an explainability story before they widen the facility.</p>
+          <div class="tile__meta">
+            <span>Risk engine · audit-trail</span>
+            <span class="tile__chip">M confidence</span>
+          </div>
+        </div>
+        <div class="tile tile--yellow">
+          <div class="tile__label">Señal</div>
+          <p class="tile__body">Proprietary underwriting reading real-time bank and document data. Load-bearing. Seed team. Model, operational, and explainability risk carried together.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- THE FRAME -->
+  <section class="section section--light" id="pitch">
+    <div class="wrap">
+      <div class="section__lead">
+        <span class="section__kicker">El marco Eduba</span>
+        <h2>La misma forma arquitectónica en casi todo producto AI-heavy.</h2>
+      </div>
+
+      <div class="split-copy">
+        <p>Mango closed the $3M seed with Ironspring in July, and BBVA Spark extended the facility the same week. The underwriting engine is reading real-time bank and document data and pricing credit decisions in seconds. The ops team is onboarding distributors as fast as it can absorb them. This page is a short read on where that stack will bend first, and where Eduba's work has helped teams in similar positions.</p>
+      </div>
+
+      <div class="layers">
+        <div class="layer layer--60">
+          <div class="layer__pct">60%</div>
+          <div class="layer__body">
+            <h3>Traditional code + Postgres</h3>
+            <p>What the risk engine actually runs on most of the time. Deterministic. Cheap. Fast.</p>
+          </div>
+        </div>
+        <div class="layer layer--30">
+          <div class="layer__pct">30%</div>
+          <div class="layer__body">
+            <h3>Rule-based logic</h3>
+            <p>Policy, thresholds, credit limits. Often dressed as ML. Rarely is.</p>
+          </div>
+        </div>
+        <div class="layer layer--10">
+          <div class="layer__pct">10%</div>
+          <div class="layer__body">
+            <h3>Genuine ML</h3>
+            <p>Where the model earns its keep. Fraud signal, distribution shift, soft-dispute triage.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="section__pullquote">
+        When a regulator asks how a credit decision got made, the answer has to hold across all three layers. The work is not to add more model. The work is to organize the context so each decision has a defensible paper trail.
+      </p>
+    </div>
+  </section>
+
+  <!-- CASE STUDY -->
+  <section class="section section--dark">
+    <div class="wrap">
+      <div class="section__lead section__lead--onDark">
+        <span class="section__kicker section__kicker--onDark">Caso aplicable</span>
+        <h2>Armetour · DRC mining compliance</h2>
+      </div>
+
+      <div class="case">
+        <div class="case__numbers">
+          <div class="case__stat">
+            <div class="case__stat-big">160<span>h</span></div>
+            <div class="case__stat-label">per audit cycle, before</div>
+          </div>
+          <div class="case__arrow" aria-hidden="true">→</div>
+          <div class="case__stat case__stat--win">
+            <div class="case__stat-big">5<span>min</span></div>
+            <div class="case__stat-label">per audit cycle, now</div>
+          </div>
+        </div>
+        <div class="case__body">
+          <p>Armetour runs compliance for a mining operator in the Democratic Republic of Congo. The team was spending 160-plus hours per audit cycle on document review. We built the context architecture, shipped the orchestration layer, and the cycle now runs in under five minutes. The CTO signed off. The regulators signed off.</p>
+          <p class="case__mapping"><strong>Mapping to Mango:</strong> document-heavy, regulated, seed-to-early stage, technical founder owns risk-and-compliance, CEO sells it. Same shape.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAPER -->
+  <section class="section section--light">
+    <div class="wrap paper">
+      <div class="paper__left">
+        <span class="section__kicker">El paper aplicable</span>
+        <h2>Ethics Engine.</h2>
+        <p class="paper__lead">
+          A psychometric assessment tool for evaluating ideological and moral patterns in LLMs. For a credit engine operating under bank scrutiny in a regulated market, that evaluation work is load-bearing.
+        </p>
+        <ul class="paper__links">
+          <li><a href="https://arxiv.org/abs/2510.11742" target="_blank" rel="noopener">arxiv.org/abs/2510.11742 <span>↗</span></a></li>
+          <li><a href="https://github.com/RinDig/AuditEngine" target="_blank" rel="noopener">github.com/RinDig/AuditEngine <span>↗</span></a></li>
+        </ul>
+      </div>
+      <div class="paper__right">
+        <div class="tile tile--yellow paper__tile">
+          <div class="tile__label">Why it matters here</div>
+          <p class="tile__body">Consistency and fairness patterns under real-world distribution shifts. That is the evidence BBVA will eventually ask for.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCOVERY -->
+  <section class="section section--cream">
+    <div class="wrap">
+      <div class="section__lead">
+        <span class="section__kicker">Preguntas de descubrimiento</span>
+        <h2>Five questions worth 30 minutes.</h2>
+      </div>
+      <ol class="questions">
+        <li><span>01</span><p>When BBVA reviews the facility, who inside Mango owns the explainability story and how is it documented today?</p></li>
+        <li><span>02</span><p>How many distributors are live in the credit flow, and what percentage of the team's week goes to onboarding the next one?</p></li>
+        <li><span>03</span><p>If a builder disputes a credit decision, what does Mango pull up to defend it?</p></li>
+        <li><span>04</span><p>Who is writing the English-language investor narrative for the next round?</p></li>
+        <li><span>05</span><p>What would have to be true in six months for you to say the risk engine scaled cleanly?</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CRED -->
+  <section class="section section--dark section--short">
+    <div class="wrap cred">
+      <div class="cred__item"><strong>KPMG UK, one of the Big Four.</strong><span>40+ executives trained. Regulated-industry audience.</span></div>
+      <div class="cred__divider" aria-hidden="true"></div>
+      <div class="cred__item"><strong>NLP Logix partnership.</strong><span>NLP Logix has been in machine learning since 2011 and runs over 150 data scientists. Eduba partners with NLP Logix for work that sits below the orchestration layer.</span></div>
+      <div class="cred__divider" aria-hidden="true"></div>
+      <div class="cred__item"><strong>Builders first.</strong><span>Jake also built an online community to 22,000 members in five weeks.</span></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--cta">
+    <div class="wrap cta">
+      <span class="section__kicker">La siguiente acción</span>
+      <h2>30 minutos con Matt.</h2>
+      <p class="cta__sub">
+        He runs the conversations that turn into real engagements. Bring one workflow you hate and one question about the risk engine you have not asked out loud yet.
+      </p>
+      <a href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener" class="btn btn--pill-yellow btn--xl">Agendar con Matt Creamer</a>
+      <p class="cta__fine">calendly.com/thecro-eduba/30min · working language: English or bilingual.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__left">
+      <span>Prepared by Eduba · <a href="https://eduba.io" target="_blank" rel="noopener">eduba.io</a> &middot; <a href="https://eduba.io/works" target="_blank" rel="noopener">More case studies</a></span>
+    </div>
+    <div class="footer__right">
+      <span>For Mango (Mangxo) · eMerge Americas 2026</span>
+    </div>
+  </div>
+</footer>
+
+<footer data-eduba="footer" style="background:#0a0a0a;color:#dcdcdc;padding:36px 20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:1.6;border-top:1px solid #1f1f1f;margin-top:48px;">
+  <div style="max-width:1040px;margin:0 auto;">
+    <div style="display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;align-items:flex-start;">
+      <div style="min-width:240px;flex:1;">
+        <div style="margin-bottom:6px;"><a href="https://eduba.io" target="_blank" rel="noopener" style="color:#ffffff;text-decoration:none;font-weight:800;font-size:20px;letter-spacing:-0.02em;">eduba</a></div>
+        <div style="opacity:0.85;margin-bottom:4px;">Van Clief Media LLC, dba Eduba</div>
+        <div style="opacity:0.7;">Veteran-owned AI consulting and training firm</div>
+      </div>
+      <div style="min-width:220px;flex:1;">
+        <div style="color:#ffffff;font-weight:600;margin-bottom:2px;">Matt Creamer, CRO</div>
+        <div style="margin-bottom:10px;"><a href="mailto:thecro@eduba.io" style="color:#dcdcdc;text-decoration:underline;">thecro@eduba.io</a></div>
+        <div style="opacity:0.85;">Founder: Jake Van Clief</div>
+      </div>
+      <div style="min-width:180px;flex:1;">
+        <div style="margin-bottom:4px;"><a href="https://eduba.io" target="_blank" rel="noopener" style="color:#dcdcdc;text-decoration:underline;">eduba.io</a></div>
+        <div style="opacity:0.85;">Palm Coast, FL</div>
+      </div>
+    </div>
+    <div style="margin-top:24px;padding-top:16px;border-top:1px solid #1f1f1f;opacity:0.62;font-size:12px;line-height:1.55;">
+      This site was custom-built by Eduba as a conference pitch. It is not affiliated with or operated by Mango.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
